@@ -46,12 +46,12 @@ public class UserCreate extends HttpServlet {
         
         boolean check = new UserDao().create(user);
         if (check) {
-        	request.setAttribute("user", "User created"); //Modificare user
+        	request.setAttribute("message", "User created"); 
         } else {
-        	request.setAttribute("user", "User not created");
+        	request.setAttribute("message", "User not created");
         }
         
-        //request.getRequestDispatcher("/coder.jsp").forward(request, response);
+        request.getRequestDispatcher("/home.jsp").forward(request, response);
         
     } 
 }
