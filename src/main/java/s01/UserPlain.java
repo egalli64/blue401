@@ -14,7 +14,7 @@ import javax.persistence.Table;
 public class UserPlain {
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
-    @Column(name = "USER_ID")
+    @Column(name = "ID_USER")
     private long id;
 
     @Column(name = "FIRST_NAME")
@@ -23,32 +23,31 @@ public class UserPlain {
     @Column(name = "LAST_NAME")
     private String lastName;
 
-    @Column(name = "BIRTH_DATE")
-    private LocalDate birthDate;
+    @Column(name = "BIRTH_OF_DATE")
+    private LocalDate birthOfDate;
 
-    @Column(name = "MAIL")
-    private String mail;
+    @Column(name = "EMAIL")
+    private String eMail;
     
-    @Column(name = "CAR_ID")
-    private long carId;
+    @Column(name = "VEHICLE_ID")
+    private long vehicleId;
     
-    @Column(name = "BIKE_ID")
-    private long bikeId;
+    @Column(name = "CREDIT")
+    private long credit;
     
-    @Column(name = "CAMPER_ID")
-    private long camperId;
+    @Column(name = "LICENSE_PLATE")
+    private String licensePlate;
     
-    @Column(name = "ELECTRIC_ID")
-    private long electricId;
 
-    public CoderPlain() {
+
+    public UserPlain() {
     }
 
-    public CoderPlain(long id, String firstName, String lastName, double salary) {
+    public UserPlain(long id, String firstName, String lastName, double salary) {
         this(id, firstName, lastName, LocalDate.now(), salary);
     }
 
-    public CoderPlain(long id, String firstName, String lastName, LocalDate hireDate, double salary) {
+    public UserPlain(long id, String firstName, String lastName, LocalDate hireDate, double salary) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
