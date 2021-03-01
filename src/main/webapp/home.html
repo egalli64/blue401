@@ -1,10 +1,89 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Insert title here</title>
-</head>
-<body>
+<html lang="en">
 
+<head>
+
+    <title>Home Page</title>
+
+    <meta name="author" content="Team Blue">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="Aw.css">
+	<meta name="keywords" content="WebApp Parking">
+
+</head>
+<h1> WELCOME </h1>
+ 
+	<div id="menu">
+		<ul>
+			<li><a href="home.html">HOME</a></li>
+			<li><a href="topup.html">TOP-UP</a></li>
+        </ul>
+    </div>
+<div id = "pagina">
+</div>
+<body>
+    <h3>Log in</h3>
+    <form action="login" method="post">
+
+        <input name="user" placeholder="email "> <input type="password" name="password"
+                                                           placeholder="password">
+        <button>Invio</button>
+    </form>
+    <h3>Se non sei registrato, crea utente</h3>
+    <form action="registuser" method="get">
+        <div>
+            <label for="user">First Name:</label>
+            <input type="text" id="user" name="user" maxlength="45">
+
+        </div>
+        <div>
+            <label for="userlast">Last name:</label>
+            <input type="text" id="userlast" name="userlast" maxlenght="45">
+        </div>
+        <div>
+            <label for="pass">Password:</label>
+            <input type="password" id="pass" name="pass" maxlenght="50">
+        </div>
+        <div>
+            <label for="data">date of birth:</label>
+            <input type="date" id="data" name="data" maxlenght="10">
+        </div>
+        <div>
+            <label for="mail">email:</label>
+            <input type="email" id="mail" name="mail" maxlenght="45">
+        </div>
+        <div>
+            <label for="license">License Plate:</label>
+            <input type="text" id="license" name="license" maxlenght="45">
+        </div>
+
+        <p>Select a vehicle type:</p>
+        <label>Type :</label>
+        <div>
+            <input type="radio" id="car" name="vehicle_id" value="1">
+            <label for="car">Car</label>
+        </div>
+        <div>
+            <input type="radio" id="bike" name="vehicle_id" value="2">
+            <label for="bike">Bike</label>
+        </div>
+        <div>
+            <input type="radio" id="camper" name="vehicle_id" value="3">
+            <label for="camper">Camper</label>
+        </div>
+        <div>
+            <input type="radio" id="electric_vehicle" name="vehicle_id" value="4">
+            <label for="electric_vehicle">Electric Vehicle</label>
+        </div>
+        <div>
+            <button type="submit">Invio</button>
+            <button type="reset">Reset</button>
+        </div>
+
+    </form>
+
+    <div id = "footer">
+        <a href="home.html">Home</a> | <a href="topup.html">Recharge</a><br >
+        Copyright © 2021 | Designed by Team Blue
+    </div> <!-- end of footer -->
 </body>
-</html>

@@ -1,0 +1,173 @@
+@media screen{
+html,body{
+  	background-color: #a3eee9;
+  	color:#000;
+  	font-size:100%;
+    font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif ;
+	padding:1em;
+	height:95%;
+	
+ }
+
+ 
+ #header {
+		height: 6em;
+		width: 98%;
+		right:1em;
+		left:1em;
+		max-height:20%;
+	}
+	#header h1 {
+		     position:absolute;
+			float:left;
+			top:0;
+			left:2em;
+			border: 0.1em solid;
+			padding: 0px 15px;
+			border-radius: 15px;
+			background-color: #505050;
+			color:#fff
+	}
+	
+	#header p{
+	    float:right;
+		position :absolute;
+		top:2em;
+		right :0em;
+		margin:1em;
+		font-size:small;
+		
+	}
+ 
+a:link { color: white; text-decoration: none}
+a:visited { color: white; text-decoration: none}
+a:hover { color: #8B8878; text-decoration: none}
+a:active { color: white; text-decoration: none }
+
+.off{
+	color:#8B8878;
+}
+
+A:hover {
+  color:#fc8800;
+}
+
+#menu {
+    font-family: Verdana, sans-serif;
+    font-size: large;
+	clear: both;
+	width:100%;
+
+}
+a{
+	 text-decoration: none; 
+	 
+}
+
+#menu li{
+		display: inline-block;
+		 height: auto;
+		 margin: 2px 10px;
+		 text-align:center;
+
+	}
+	
+#menu ul{
+	position :relative;
+	text-align:center;
+	margin: 0px 0px 0px 0px;
+	background-color:#505050;
+}
+
+div.page_content {
+	padding:50px;
+}
+
+
+
+
+
+/*  */
+/*  */
+
+/* ----- Footer ----- */
+#footer {
+	font-size: x-small;
+	clear: both;
+	padding: 10px;
+	width: 100%;
+	text-align: center;
+}
+#footer a {
+	color: #00688B;
+	font-weight: normal;
+}
+#footer a:hover {
+	color: #fc8800;
+}
+	
+.descrizione{
+	text-align:justify;
+}
+.info{
+	font-size: small;
+	color : #fc8800;	
+	right: 0;
+	margin-top:0;
+	
+}
+.link{
+	text-decoration: underline;
+}
+	table{
+		text-align:left;
+	}
+	td{
+		padding:1ex;
+	}
+.errore{
+	color : crimson;
+}
+.utente{
+	position: absolute;
+	right:0;
+	margin-left:10em;
+	}
+#contenitore{
+	min-height: 100%;
+    height: auto !important;
+    height: 100%;
+}
+
+#top_header{
+	background-color:#fc8800;
+	margin: -2.5em -2.5em -2.5em -2.5em;
+}
+#content{
+    width: 100%;
+    margin: auto;
+}
+}
+@media print{
+	body,html{
+		background-color: white;
+		color:black;
+		font-family : Times, serif;
+		font-size:12pt;
+	}
+	#menu{
+		display:none;
+	}
+	#footer{
+		display:none;
+	}
+}
+
+div.page_content a:link { color: #00688B; text-decoration: none}
+
+div.page_content a:visited { color: #00688B; text-decoration: none}
+
+div.page_content a:hover { color: #fc8800; text-decoration: none}
+
+div.page_content a:active { color: #00688B; text-decoration: none }
+
