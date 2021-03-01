@@ -12,31 +12,31 @@ import org.slf4j.LoggerFactory;
 
 import blue.dao.UserDao;
 
-@WebServlet("/home/login")
+@WebServlet("/login")
 public class login extends HttpServlet {
-	private static final long serialVersionUID = 1L;
-	private static final Logger log = LoggerFactory.getLogger(UserCreate.class);
+    private static final long serialVersionUID = 1L;
+    private static final Logger log = LoggerFactory.getLogger(UserCreate.class);
 
-	@Override
-	protected void doPost(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
-		log.trace("enter");
-		String username = request.getParameter("username");
-		String password = request.getParameter("password");
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        log.trace("enter");
+        String username = request.getParameter("username");
+        String password = request.getParameter("password");
 
-		if (username == null || username.isBlank() || password == null || password.isBlank()) {
-			String warning = "Invalid Username or Password, please retry";
-			request.setAttribute("logwarning", warning);
-		} else {
+        if (username == null || username.isBlank() || password == null || password.isBlank()) {
+            String warning = "Invalid Username or Password, please retry";
+            request.setAttribute("logwarning", warning);
+        } else {
 
-			new UserDao().getLogin(username, password).ifPresent(user -> {
+            new UserDao().getLogin(username, password).ifPresent(user -> {
 
-				request.setAttribute("user", user);
+                request.setAttribute("user", user);
 
-			});
+            });
 
-		}
-		request.getRequestDispatcher("logged.jsp").forward(request, response);
-	}
+        }
+        request.getRequestDispatcher("logged.jsp").forward(request, response);
+    }
 
 }

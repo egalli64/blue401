@@ -5,7 +5,7 @@
     <title>User created</title>
     <meta name="author" content="Team Blue">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <link rel="stylesheet" type="text/css" href="Aw.css">
+    <link rel="stylesheet" type="text/css" href="aw.css">
     <meta name="keywords" content="WebApp Parking">
 </head>
 <body>
