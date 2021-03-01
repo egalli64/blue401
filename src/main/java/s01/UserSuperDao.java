@@ -7,8 +7,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 //TODO
-import com.example.jed.dao.JpaUtil;
-import com.example.jed.s05.CoderPlain;
+import s01.JpaUtil;
+import s01.UserSuperPlain;
 
 public class UserSuperDao {
     private static final Logger log = LoggerFactory.getLogger(UserSuperDao.class);
