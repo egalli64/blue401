@@ -15,6 +15,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import blue.dao.User;
+import blue.dao.UserDao;
 
 @WebServlet("/home/registuser")
 public class UserCreate extends HttpServlet {
@@ -42,7 +43,16 @@ public class UserCreate extends HttpServlet {
         String licensePlate = request.getParameter("license");
         
         User user = new User(firstName, lastName, password, dateOfBirth, eMail, vehicleId, licensePlate);
-         
+        
+        boolean check = UserDao.create(user);
+        if (check) {
+        	request.setAttribute("user", "User created"); //Modificare user
+        } else {
+        	request.setAttribute("user", "User not created");
+        }
+        
+        //request.getRequestDispatcher("/coder.jsp").forward(request, response);
+        
     } 
 }
         

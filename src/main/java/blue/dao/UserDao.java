@@ -8,7 +8,7 @@ import org.slf4j.LoggerFactory;
 public class UserDao {
     private static final Logger log = LoggerFactory.getLogger(UserDao.class);
 
-    public boolean create(User user) {
+    public static boolean create(User user) {
         EntityManager em = null;
         EntityTransaction tx = null;
         log.trace("enter");
