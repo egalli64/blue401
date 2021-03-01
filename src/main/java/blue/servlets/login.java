@@ -36,7 +36,7 @@ public class login extends HttpServlet {
 			});
 
 		}
-		request.getRequestDispatcher("parking.jsp").forward(request, response);
+		request.getRequestDispatcher("logged.jsp").forward(request, response);
 	}
 
 }
