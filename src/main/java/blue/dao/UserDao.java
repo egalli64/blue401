@@ -1,19 +1,14 @@
-package s01;
-
+package blue.dao;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityTransaction;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+public class UserDao {
+    private static final Logger log = LoggerFactory.getLogger(UserDao.class);
 
-import s01.JpaUtil;
-import s01.UserSuperPlain;
-
-public class UserSuperDao {
-    private static final Logger log = LoggerFactory.getLogger(UserSuperDao.class);
-
-    public boolean create(UserSuperPlain userSuper) {
+    public boolean create(User user) {
         EntityManager em = null;
         EntityTransaction tx = null;
         log.trace("enter");
@@ -22,7 +17,7 @@ public class UserSuperDao {
             em = JpaUtil.createEntityManager();
             tx = em.getTransaction();
             tx.begin();
-            em.persist(userSuper);
+            em.persist(user);
             tx.commit();
             return true;
         } catch (Exception ex) {
@@ -42,7 +37,7 @@ public class UserSuperDao {
         }
     }
 
-    public boolean update(UserSuperPlain userSuper) {
+    public boolean update(User user) {
         EntityManager em = null;
         EntityTransaction tx = null;
 
@@ -50,7 +45,7 @@ public class UserSuperDao {
             em = JpaUtil.createEntityManager();
             tx = em.getTransaction();
             tx.begin();
-            em.merge(userSuper);
+            em.merge(user);
             tx.commit();
             return true;
         } catch (Exception ex) {
@@ -76,7 +71,7 @@ public class UserSuperDao {
 
         try {
             em = JpaUtil.createEntityManager();
-            UserSuperPlain entity = em.find(UserSuperPlain.class, id);
+            User entity = em.find(User.class, id);
             if (entity != null) {
                 tx = em.getTransaction();
                 tx.begin();
@@ -84,11 +79,11 @@ public class UserSuperDao {
                 tx.commit();
                 return true;
             } else {
-                log.info("Can't remove missing super user " + id);
+                log.info("Can't remove missing user " + id);
                 return false;
             }
         } catch (Exception ex) {
-            log.warn("Can't remove super user " + id, ex);
+            log.warn("Can't remove user " + id, ex);
             try {
                 if (tx != null && tx.isActive()) {
                     tx.rollback();
