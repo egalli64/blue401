@@ -1,7 +1,7 @@
 
 package blue.dao;
 
-import java.time.LocalDate;
+import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -23,9 +23,12 @@ public class User {
 
 	@Column(name = "LAST_NAME")
 	private String lastName;
+	
+	@Column(name = "PASSWORD")
+	private String password;
 
 	@Column(name = "BIRTH_OF_DATE")
-	private LocalDate birthOfDate;
+	private Date birthOfDate;
 
 	@Column(name = "EMAIL")
 	private String eMail;
@@ -41,7 +44,18 @@ public class User {
 
 	public User() {
 	}
-	
+
+	public User(String firstName, String lastName, String password, Date birthOfDate, String eMail, long vehicleId,
+			String licensePlate) {
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.password = password;
+		this.birthOfDate = birthOfDate;
+		this.eMail = eMail;
+		this.vehicleId = vehicleId;
+		this.credit = 0;
+		this.licensePlate = licensePlate;
+	}
 
 	public long getId() {
 		return id;
@@ -66,12 +80,20 @@ public class User {
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
+	
+	public String getPassword() {
+		return password;
+	}
 
-	public LocalDate getBirthOfDate() {
+	public void setPassword(String password) {
+		this.password = password;
+	}
+	
+	public Date getBirthOfDate() {
 		return birthOfDate;
 	}
 
-	public void setBirthOfDate(LocalDate birthOfDate) {
+	public void setBirthOfDate(Date birthOfDate) {
 		this.birthOfDate = birthOfDate;
 	}
 
@@ -106,5 +128,14 @@ public class User {
 	public void setLicensePlate(String licensePlate) {
 		this.licensePlate = licensePlate;
 	}
+
+	@Override
+	public String toString() {
+		return "User [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", birthOfDate=" + birthOfDate
+				+ ", eMail=" + eMail + ", vehicleId=" + vehicleId + ", credit=" + credit + ", licensePlate="
+				+ licensePlate + "]";
+	}
+
+
 
 }

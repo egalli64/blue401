@@ -21,6 +21,9 @@ public class Superuser {
 	@Column(name = "LAST_NAME")
 	private String lastName;
 
+	@Column(name = "PASSWORD")
+	private String password;
+
 	@Column(name = "MAIL")
 	private String mail;
 
@@ -32,6 +35,17 @@ public class Superuser {
 
 	public Superuser() {
 
+	}
+
+	public Superuser(long id, String firstName, String lastName, String password, String mail, long zoneId,
+			long phone) {
+		this.id = id;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.password = password;
+		this.mail = mail;
+		this.zoneId = zoneId;
+		this.phone = phone;
 	}
 
 	public long getId() {
@@ -58,6 +72,14 @@ public class Superuser {
 		this.lastName = lastName;
 	}
 
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
 	public String getMail() {
 		return mail;
 	}
@@ -80,6 +102,12 @@ public class Superuser {
 
 	public void setPhone(long phone) {
 		this.phone = phone;
+	}
+
+	@Override
+	public String toString() {
+		return "Superuser [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", mail=" + mail
+				+ ", zoneId=" + zoneId + ", phone=" + phone + "]";
 	}
 
 }
