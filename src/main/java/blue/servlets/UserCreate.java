@@ -42,7 +42,7 @@ public class UserCreate extends HttpServlet {
         String licensePlate = request.getParameter("license");
         
         User user = new User(firstName, lastName, password, dateOfBirth, eMail, vehicleId, licensePlate);
-        //Prova 
+         
     } 
 }
         
