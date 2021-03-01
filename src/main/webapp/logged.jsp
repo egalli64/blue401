@@ -11,7 +11,7 @@
 <body>
     <h1>Hello ${param.user}</h1>
     <p>
-        Back <a href="home.html">home</a>
+        Back <a href="index.html">Home</a>
     </p>
 
 

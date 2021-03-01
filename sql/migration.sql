@@ -27,6 +27,7 @@ CREATE TABLE IF NOT EXISTS `blue`.`parkings` (
 -- -----------------------------------------------------
 -- Table `blue`.`vehicles`
 -- -----------------------------------------------------
+drop table if exists vehicles;
 CREATE TABLE IF NOT EXISTS `blue`.`vehicles` (
   `vehicle_id` INT NOT NULL auto_increment,
   `vehicle_type` VARCHAR(45) NOT NULL,
@@ -36,6 +37,7 @@ CREATE TABLE IF NOT EXISTS `blue`.`vehicles` (
 -- -----------------------------------------------------
 -- Table `blue`.`users`
 -- -----------------------------------------------------
+drop table if exists users;
 CREATE TABLE IF NOT EXISTS `blue`.`users` (
   `user_id` INT NOT NULL AUTO_INCREMENT,
   `first_name` VARCHAR(45) NOT NULL,
@@ -52,6 +54,7 @@ CREATE TABLE IF NOT EXISTS `blue`.`users` (
     REFERENCES `blue`.`vehicles` (`vehicle_id`)
 );
 
+drop table if exists superusers;
 CREATE TABLE IF NOT EXISTS `blue`.`superusers` (
   `user_id` INT NOT NULL AUTO_INCREMENT,
   `first_name` VARCHAR(45) NOT NULL,
@@ -71,6 +74,7 @@ CREATE TABLE IF NOT EXISTS `blue`.`superusers` (
 -- -----------------------------------------------------
 -- Table `blue`.`parking_history`	.
 -- -----------------------------------------------------
+drop table if exists parking_history;
 CREATE TABLE IF NOT EXISTS `blue`.`parking_history` (
   `parking_history_id` INT NOT NULL AUTO_INCREMENT,
   `user_id` INT NOT NULL,
@@ -89,6 +93,8 @@ CREATE TABLE IF NOT EXISTS `blue`.`parking_history` (
     FOREIGN KEY (`zone_id`)
     REFERENCES `blue`.`zone` (`zone_id`));
 
+
+drop table if exists zone;
 CREATE TABLE IF NOT EXISTS `blue`.`zone` (
   `zone_id` INT NOT NULL AUTO_INCREMENT,
   `zone_name` VARCHAR(45) NULL,
