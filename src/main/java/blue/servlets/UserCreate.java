@@ -51,7 +51,7 @@ public class UserCreate extends HttpServlet {
         	request.setAttribute("message", "User not created");
         }
         
-        request.getRequestDispatcher("/home.jsp").forward(request, response);
+        request.getRequestDispatcher("/created.jsp").forward(request, response);
         
     } 
 }
