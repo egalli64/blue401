@@ -6,7 +6,7 @@ import javax.persistence.EntityTransaction;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-//TODO
+
 import s01.JpaUtil;
 import s01.UserSuperPlain;
 
