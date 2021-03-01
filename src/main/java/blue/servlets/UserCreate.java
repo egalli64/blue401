@@ -44,7 +44,7 @@ public class UserCreate extends HttpServlet {
         
         User user = new User(firstName, lastName, password, dateOfBirth, eMail, vehicleId, licensePlate);
         
-        boolean check = UserDao.create(user);
+        boolean check = new UserDao().create(user);
         if (check) {
         	request.setAttribute("user", "User created"); //Modificare user
         } else {
