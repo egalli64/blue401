@@ -27,7 +27,7 @@
 	
 	<form action="credit" method="get">
 
-		<p>Credit: ${current}€</p>
+		<p>Credit: ${current}</p>
 		<label>Quanto vuoi ricaricare?</label>
 		<div>
 			<input type="radio" id="5" name="money" value="5"> <label
@@ -45,9 +45,6 @@
 			<input type="radio" id="50" name="money" value="50"> <label
 				for="50">50€</label>
 		</div>
-
-		<input type="password" id="code" name="code"> <label
-			for="code">Inserisci coupon</label>
 
 		<div>
 			<button type="submit">Invio</button>

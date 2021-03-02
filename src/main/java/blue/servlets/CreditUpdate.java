@@ -38,7 +38,7 @@ public class CreditUpdate extends HttpServlet {
 
 			boolean check = new UserDao().update(user);
 			if (check) {
-				request.setAttribute("message", "Credit updated. Your new credit is " + newCredit);
+				request.setAttribute("message", "Credit updated. Your new credit is " + newCredit + "€");
 			} else {
 				request.setAttribute("message_2", "Credit not updated");
 			}
@@ -52,7 +52,7 @@ public class CreditUpdate extends HttpServlet {
 		if (session != null) {
 			User user = (User) session.getAttribute("user");
 			Long currentCredit = user.getCredit();
-			request.setAttribute("current", currentCredit);
+			request.setAttribute("current", currentCredit + "€");
 			request.getRequestDispatcher("/credit.jsp").forward(request, response);			
 		}
 	}
