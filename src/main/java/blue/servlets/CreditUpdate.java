@@ -35,7 +35,6 @@ public class CreditUpdate extends HttpServlet {
 			Long currentCredit = user.getCredit();
 			request.setAttribute("current", currentCredit);
 			
-			
 		    Long newCredit = currentCredit + money;
 			user.setCredit(newCredit);
 
