@@ -31,7 +31,7 @@ public class CreditUpdate extends HttpServlet {
 			String credit = request.getParameter("money");
 			Long money = Long.parseLong(credit);
 			Long currentCredit = user.getCredit();
-			request.setAttribute("current", currentCredit);
+			//request.setAttribute("current", currentCredit);
 
 			Long newCredit = currentCredit + money;
 			user.setCredit(newCredit);
@@ -48,7 +48,13 @@ public class CreditUpdate extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		doGet(request, response);
+		HttpSession session = request.getSession(false);
+		if (session != null) {
+			User user = (User) session.getAttribute("user");
+			Long currentCredit = user.getCredit();
+			request.setAttribute("current", currentCredit);
+			request.getRequestDispatcher("/credit.jsp").forward(request, response);			
+		}
 	}
 
 }

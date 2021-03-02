@@ -20,9 +20,14 @@
 <div id="pagina"></div>
 <body>
 	<h1>My credit area</h1>
+	
+	<form action="credit" method="post">
+	<input type="submit" value="current amount">
+	</form>
+	
 	<form action="credit" method="get">
 
-		<p>Credit: ${current};</p>
+		<p>Credit: ${current}€</p>
 		<label>Quanto vuoi ricaricare?</label>
 		<div>
 			<input type="radio" id="5" name="money" value="5"> <label
