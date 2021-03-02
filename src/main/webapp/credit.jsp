@@ -22,7 +22,7 @@
 	<h1>My credit area</h1>
 	<form action="credit" method="get">
 
-		<p>Credit:</p>
+		<p>Credit: ${current};</p>
 		<label>Quanto vuoi ricaricare?</label>
 		<div>
 			<input type="radio" id="5" name="money" value="5"> <label
@@ -49,6 +49,16 @@
 			<button type="reset">Reset</button>
 		</div>
 	</form>
+	<c:if test="${message ne null}">
+		<p>
+			<b>${message}</b>
+		</p>
+	</c:if>
+	<c:if test="${message_2 ne null}">
+		<p>
+			<b>${message_2}</b>
+		</p>
+	</c:if>
 	<div id="footer">
 		<a href="index.html">Home</a> | <a href="credit.jsp">Top-up</a> | <a href="update.jsp.jsp">Update Profile</a><br>
 		Copyright Â© 2021 | Designed by Team Blue

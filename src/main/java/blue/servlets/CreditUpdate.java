@@ -28,20 +28,25 @@ public class CreditUpdate extends HttpServlet {
 
 		HttpSession session = request.getSession(false);
 		if (session != null) {
-			@SuppressWarnings("unchecked")
+		
 			User user = (User) session.getAttribute("user");
 			String credit = request.getParameter("money");
 			Long money = Long.parseLong(credit);
-			user.setCredit(money);
+			Long currentCredit = user.getCredit();
+			request.setAttribute("current", currentCredit);
+			
+			
+		    Long newCredit = currentCredit + money;
+			user.setCredit(newCredit);
 
 			boolean check = new UserDao().update(user);
 			if (check) {
-				request.setAttribute("message", "User updated");
+				request.setAttribute("message", "Credit updated. Your new credit is " + newCredit);
 			} else {
-				request.setAttribute("message", "User not updated");
+				request.setAttribute("message_2", "Credit not updated");
 			}
 		}
-		request.getRequestDispatcher("/logged.jsp").forward(request, response);
+		request.getRequestDispatcher("/credit.jsp").forward(request, response);
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
