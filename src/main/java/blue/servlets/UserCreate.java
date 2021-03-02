@@ -17,7 +17,7 @@ import org.slf4j.LoggerFactory;
 import blue.dao.User;
 import blue.dao.UserDao;
 
-@WebServlet("/home/registuser")
+@WebServlet("/registuser")
 public class UserCreate extends HttpServlet {
     private static final long serialVersionUID = 1L;
     private static final Logger log = LoggerFactory.getLogger(UserCreate.class);
@@ -33,12 +33,12 @@ public class UserCreate extends HttpServlet {
         String date = request.getParameter("data");
         Date dateOfBirth = null;
 		try {
-			dateOfBirth = new SimpleDateFormat("dd/MM/yyyy").parse(date);
+			dateOfBirth = new SimpleDateFormat("yyyy-mm-dd").parse(date);
 		} catch (ParseException e) {
 			log.error("Bad input date",e);
 		}
         String eMail = request.getParameter("mail");
-        String vehicle = request.getParameter("vehicle");
+        String vehicle = request.getParameter("vehicle_id");
         long vehicleId = Long.parseLong(vehicle);
         String licensePlate = request.getParameter("license");
         

@@ -27,7 +27,7 @@ public class User {
 	@Column(name = "PASSWORD")
 	private String password;
 
-	@Column(name = "BIRTH_OF_DATE")
+	@Column(name = "DATE_OF_BIRTH")
 	private Date birthOfDate;
 
 	@Column(name = "EMAIL")
