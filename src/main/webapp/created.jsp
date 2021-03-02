@@ -16,7 +16,7 @@
 
 
 <div id = "footer">
-    <a href="index.html">Home</a> | <a href="topup.html">Recharge</a><br >
+    <a href="index.html">Home</a> | <a href="topup.html">Top-up</a><br >
     Copyright © 2021 | Designed by Team Blue
 </div> <!-- end of footer -->
 </body>
