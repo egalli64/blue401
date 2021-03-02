@@ -27,6 +27,7 @@
 		<a href="index.html">Home</a> | <a href="credit.jsp">Top-up</a><br>
 		Copyright © 2021 | Designed by Team Blue
 	</div>
+	 <li><a href="credit.jsp">TOP-UP</a></li>
 	<!-- end of footer -->
 </body>
 </html>
