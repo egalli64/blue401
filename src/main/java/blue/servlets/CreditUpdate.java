@@ -1,7 +1,6 @@
 package blue.servlets;
 
 import java.io.IOException;
-import java.util.Map;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -33,7 +32,7 @@ public class CreditUpdate extends HttpServlet {
 		if (session != null) {
 			@SuppressWarnings("unchecked")
 			User user = (User) session.getAttribute("user");
-			String credit = (String) request.getAttribute("money");
+			String credit = request.getParameter("money");
 			Long money = Long.parseLong(credit);
 			user.setCredit(money);
 
