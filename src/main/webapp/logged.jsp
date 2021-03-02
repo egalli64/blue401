@@ -12,8 +12,8 @@
 </head>
 <body>
 	<c:choose>
-		<c:when test="${warning ne null}">
-			<p>${warning}</p>
+		<c:when test="${logwarning ne null}">
+			<p><b>${logwarning}</b></p>
 		</c:when>
 		<c:otherwise>
 			<h1>Hello ${user.firstName}</h1>
