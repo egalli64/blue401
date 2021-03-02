@@ -17,7 +17,7 @@ public class UserDao {
 		EntityManager em = null;
 		try {
 			em = JpaUtil.createEntityManager();
-			String jpql = "FROM Users c WHERE c.eMail = :username and c.password = :password";
+			String jpql = "FROM User c WHERE c.eMail = :username and c.password = :password";
 			TypedQuery<User> query = em.createQuery(jpql, User.class);
 			query.setParameter("username", username);
 			query.setParameter("password", password);
