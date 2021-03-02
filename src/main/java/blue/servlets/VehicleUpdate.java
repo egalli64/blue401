@@ -25,7 +25,7 @@ public class VehicleUpdate extends HttpServlet {
 
 		HttpSession session = request.getSession(false);
 		if (session != null) {
-			@SuppressWarnings("unchecked")
+			
 			User user = (User) session.getAttribute("user");
 			String vehicle_type = request.getParameter("vehicle_id");
 			Long vehicle_id = Long.parseLong(vehicle_type);
