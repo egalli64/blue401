@@ -10,6 +10,14 @@
 <link rel="stylesheet" type="text/css" href="aw.css">
 <meta name="keywords" content="WebApp Parking">
 </head>
+<div id="menu">
+	<ul>
+		<li><a href="index.html">HOME</a></li>
+		<li><a href="credit.jsp">Top-up</a></li>
+		<li><a href="update.jsp">Update Profile</a></li>
+	</ul>
+</div>
+<div id="pagina"></div>
 <body>
 	<h1>My credit area</h1>
 	<form action="credit" method="get">
@@ -40,7 +48,10 @@
 			<button type="submit">Invio</button>
 			<button type="reset">Reset</button>
 		</div>
-
 	</form>
-
+	<div id="footer">
+		<a href="index.html">Home</a> | <a href="credit.jsp">Top-up</a> | <a href="update.jsp.jsp">Update Profile</a><br>
+		Copyright Â© 2021 | Designed by Team Blue
+	</div>
+	<!-- end of footer -->
 </body>

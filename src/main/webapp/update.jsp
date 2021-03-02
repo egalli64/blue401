@@ -14,8 +14,8 @@
 <div id="menu">
 	<ul>
 		<li><a href="index.html">HOME</a></li>
-		<li><a href="credit.jsp">TOP-UP</a></li>
-		<li><a href="update.html">Vehicle-update</a></li>
+		<li><a href="credit.jsp">Top-up</a></li>
+		<li><a href="update.jsp">Update Profile</a></li>
 	</ul>
 </div>
 <div id="pagina"></div>
@@ -58,7 +58,7 @@
 	</form>
 
 	<div id="footer">
-		<a href="index.html">Home</a> | <a href="topup.html">Top-up</a><br>
+		<a href="index.html">Home</a> | <a href="credit.jsp">Top-up</a> | <a href="update.jsp.jsp">Update Profile</a><br>
 		Copyright Â© 2021 | Designed by Team Blue
 	</div>
 	<!-- end of footer -->

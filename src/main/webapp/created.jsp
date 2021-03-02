@@ -8,6 +8,12 @@
     <link rel="stylesheet" type="text/css" href="aw.css">
     <meta name="keywords" content="WebApp Parking">
 </head>
+<div id="menu">
+    <ul>
+        <li><a href="index.html">HOME</a></li>
+    </ul>
+</div>
+<div id="pagina"></div>
 <body>
 <h1>Hello ${param.user}</h1>
 <p>
@@ -16,7 +22,7 @@
 
 
 <div id = "footer">
-    <a href="index.html">Home</a> | <a href="topup.html">Top-up</a><br >
+    <a href="index.html">Home</a><br >
     Copyright © 2021 | Designed by Team Blue
 </div> <!-- end of footer -->
 </body>

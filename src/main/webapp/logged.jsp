@@ -10,6 +10,14 @@
 <link rel="stylesheet" type="text/css" href="aw.css">
 <meta name="keywords" content="WebApp Parking">
 </head>
+<div id="menu">
+	<ul>
+		<li><a href="index.html">HOME</a></li>
+		<li><a href="credit.jsp">Top-up</a></li>
+		<li><a href="update.jsp">Update Profile</a></li>
+	</ul>
+</div>
+<div id="pagina"></div>
 <body>
 	<c:choose>
 		<c:when test="${logwarning ne null}">
@@ -24,7 +32,7 @@
 		Back <a href="index.html">Home</a>
 	</p>
 	<div id="footer">
-		<a href="index.html">Home</a> | <a href="credit.jsp">Top-up</a><br>
+		<a href="index.html">Home</a> | <a href="credit.jsp">Top-up</a>| <a href="update.jsp.jsp">Update Profile</a><br>
 		Copyright © 2021 | Designed by Team Blue
 	</div>
 	 <li><a href="credit.jsp">TOP-UP</a></li>
