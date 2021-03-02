@@ -11,12 +11,12 @@
 <body>
 <h1>Hello ${param.user}</h1>
 <p>
-    Back <a href="home.html">home</a>
+    Back <a href="index.html">home</a>
 </p>
 
 
 <div id = "footer">
-    <a href="home.html">Home</a> | <a href="topup.html">Recharge</a><br >
+    <a href="index.html">Home</a> | <a href="topup.html">Recharge</a><br >
     Copyright © 2021 | Designed by Team Blue
 </div> <!-- end of footer -->
 </body>
