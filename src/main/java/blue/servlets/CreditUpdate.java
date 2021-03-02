@@ -28,7 +28,6 @@ public class CreditUpdate extends HttpServlet {
 
 		HttpSession session = request.getSession(false);
 		if (session != null) {
-			@SuppressWarnings("unchecked")
 			User user = (User) session.getAttribute("user");
 			String credit = request.getParameter("money");
 			Long money = Long.parseLong(credit);

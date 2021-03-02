@@ -123,4 +123,4 @@ INSERT INTO parkings (`parking_name`, `capacity_bike`, `capacity_car`, `capacity
 
 INSERT INTO `blue`.`superusers` (`first_name`, `last_name`, `password`, `email`, `zone_id`, `telefono`) VALUES ('Daniele', 'Quaglione', 'Dany', 'daniele.q@libero.it', '1', '34556454');
 
-
+commit;
