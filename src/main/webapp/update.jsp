@@ -12,6 +12,7 @@
 <meta name="keywords" content="WebApp Parking">
 </head>
 <div id="menu">
+
 	<ul>
 		<li><a href="index.html">HOME</a></li>
 		<li><a href="credit.jsp">Top-up</a></li>
