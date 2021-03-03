@@ -16,6 +16,10 @@ html, body {
 	margin: -100px 0 0 -175px;
 }
 
+#error {
+	color: red;
+}
+
 #header {
 	height: 6em;
 	width: 98%;
