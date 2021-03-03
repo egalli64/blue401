@@ -47,7 +47,7 @@
 						<th scope="col">Sign Up:
 						<div id="sign">
 						<p>It’s quick and easy.<br>
-						By clicking Sign Up, you agree to our Terms and confirm you are at least 18. Learn how we collect, use and share your data in our Data Policy and how we use cookies and similar technology in our Cookies Policy.</p>
+						</p>
 						</div>
 </th>
 					</tr>
@@ -65,13 +65,13 @@
 
 				</tr>
 				<tr>
-					<th scope="row"><label for="pass">Password:</label></th>
+					<th scope="row"><label for="pass">New Password:</label></th>
 					<td><input type="password" id="pass" name="pass"
 						maxlength="50"></td>
 
 				</tr>
 				<tr>
-					<th scope="row"><label for="data">Date of birth:</label></th>
+					<th scope="row"><label for="data">Birthday:</label></th>
 					<td><input type="date" id="data" name="data" maxlength="10"></td>
 
 				</tr>
@@ -110,10 +110,11 @@
 			</div>
 
 
-			<div>
-				<button type="submit">Confirm</button>
+			<div><br>
+				<button type="submit">Sign Up</button>
 				<button type="reset">Reset</button>
 			</div>
+			<p>By clicking Sign Up, you agree to our Terms and confirm you are at least 18.</p>
 			<html>
 
 		</form>
