@@ -1,3 +1,7 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,9 +29,14 @@
 		<form action="login" method="post">
 			<input name="username" placeholder="email "> <input
 				type="password" name="password" placeholder="password">
-			<button>Invio</button>
+			<button>Invio</button>	
 		</form>
-		<h3>Se non sei registrato, crea utente:</h3>
+		<c:if test="${logwarning ne null}">
+			<p>
+				<b>${logwarning}</b>
+			</p>
+		    </c:if>
+		<h3>If you are not registered, create new account:</h3>
 		<form action="registuser" method="get">
 			<table>
 				<thead>
@@ -100,12 +109,13 @@
 				<button type="submit">Invio</button>
 				<button type="reset">Reset</button>
 			</div>
+			<html>
 
 		</form>
 
 		<div id="footer">
-			<a href="index.html">Home</a><br> Copyright © 2021 | Designed by
-			Team Blue
+			<a href="index.html">Home</a><br> Copyright Â© 2021 | Designed
+			by Team Blue
 		</div>
 		<!-- end of footer -->
 	</div>
