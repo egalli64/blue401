@@ -15,7 +15,7 @@
 <meta name="keywords" content="WebApp Parking">
 
 </head>
-<h1>WELCOME</h1>
+<h1>WELCOME to the JUNGLE</h1>
 
 <div id="menu">
 	<ul>
@@ -44,8 +44,12 @@
 				<thead>
 					<tr>
 						<th scope="row"></th>
-						<th scope="col">Your profile:</th>
-
+						<th scope="col">Sign Up:
+						<div id="sign">
+						<p>It’s quick and easy.<br>
+						By clicking Sign Up, you agree to our Terms and confirm you are at least 18. Learn how we collect, use and share your data in our Data Policy and how we use cookies and similar technology in our Cookies Policy.</p>
+						</div>
+</th>
 					</tr>
 				</thead>
 				<tr>
@@ -72,7 +76,7 @@
 
 				</tr>
 				<tr>
-					<th scope="row"><label for="mail">email:</label></th>
+					<th scope="row"><label for="mail">Email:</label></th>
 					<td><input type="email" id="mail" name="mail" maxlength="45"></td>
 
 				</tr>
@@ -82,7 +86,6 @@
 						maxlength="45"></td>
 
 				</tr>
-
 
 			</table>
 
@@ -108,7 +111,7 @@
 
 
 			<div>
-				<button type="submit">Invio</button>
+				<button type="submit">Confirm</button>
 				<button type="reset">Reset</button>
 			</div>
 			<html>
@@ -119,6 +122,5 @@
 			<a href="index.html">Home</a><br> Copyright © 2021 | Designed
 			by Team Blue
 		</div>
-		<!-- end of footer -->
 	</div>
 </body>
