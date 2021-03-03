@@ -36,7 +36,10 @@
 					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15718.198901288937!2d7.633255701223295!3d45.04467293408329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47886cd518833c99%3A0xbf32e26c4a1fea49!2sSanta%20Rita%2C%20Torino%20TO!5e0!3m2!1sit!2sit!4v1614782947253!5m2!1sit!2sit"
 					width="300" height="225" style="border: 0;"> </iframe>More info ->
 			</a>
-
+           <p><b>Parking Name: ${parking1.parkingName}</b> </p>
+           <p><b>Tariff: ${parking1.cost} €/hr </b></p>
+           <p><b>Parking capacity: ${parking1.capacity}</b></p>
+           <br>
 			<form action="parkaction" method="get">
 				<input type="submit" value="Park Here">
 			</form>

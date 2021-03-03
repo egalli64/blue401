@@ -5,6 +5,7 @@ public class ParkingObj {
 	private String parkingName;
 	private long cost;
 	private long capacity;
+	
 	public String getParkingName() {
 		return parkingName;
 	}
