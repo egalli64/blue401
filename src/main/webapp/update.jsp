@@ -12,6 +12,7 @@
 <meta name="keywords" content="WebApp Parking">
 </head>
 <div id="menu">
+
 	<ul>
 		<li><a href="index.html">HOME</a></li>
 		<li><a href="credit.jsp">Top-up</a></li>
@@ -20,6 +21,24 @@
 </div>
 <div id="pagina"></div>
 <body>
+
+	<table>
+		<tr>
+
+			<th>First Name</th>
+			<th>Last Name</th>
+			<th>Email</th>
+			<th>Birth Date</th>
+		</tr>
+		<tr>
+
+			<td>${user.firstName}</td>
+			<td>${user.lastName}</td>
+			<td>${user.eMail}</td>
+			<td>${user.birthOfDate}</td>
+		</tr>
+	</table>
+
 	<c:if test="${message_vehicle ne null}">
 		<p>
 			<b>${message_vehicle}</b>
@@ -58,8 +77,9 @@
 	</form>
 
 	<div id="footer">
-		<a href="index.html">Home</a> | <a href="credit.jsp">Top-up</a> | <a href="update.jsp.jsp">Update Profile</a><br>
-		Copyright Â© 2021 | Designed by Team Blue
+		<a href="index.jsp">Home</a> | <a href="credit.jsp">Top-up</a> | <a
+			href="update.jsp">Update Profile</a><br> Copyright Â© 2021 |
+		Designed by Team Blue
 	</div>
 	<!-- end of footer -->
 </body>

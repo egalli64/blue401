@@ -40,7 +40,7 @@ public class Login extends HttpServlet {
                 try {
 					request.getRequestDispatcher("logged.jsp").forward(request, response);
 				} catch (ServletException | IOException e) {
-					// TODO Auto-generated catch block
+					
 					e.printStackTrace();
 				}
 
@@ -50,7 +50,7 @@ public class Login extends HttpServlet {
                 try {
 					request.getRequestDispatcher("index.jsp").forward(request, response);
 				} catch (ServletException | IOException e) {
-					// TODO Auto-generated catch block
+				
 					e.printStackTrace();
 				}
             });

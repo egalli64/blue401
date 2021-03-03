@@ -38,12 +38,14 @@
 	</c:if>
 
 	<p>
-		Back <a href="index.html">Home</a>
+		Back <a href="index.jsp">Home</a>
 	</p>
 	<div id="footer">
-		<a href="index.html">Home</a> | <a href="credit.jsp">Top-up</a>| <a
-			href="update.jsp">Update Profile</a><br> Copyright © 2021 |
-		Designed by Team Blue
+		<a href="index.jsp">Home</a> | <a href="credit.jsp">Top-up</a>|
+		<form action="show" method="get">
+			<input type="submit" value="Update Profile">
+		</form>
+		Copyright © 2021 | Designed by Team Blue
 	</div>
 
 	<!-- end of footer -->
