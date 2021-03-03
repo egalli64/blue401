@@ -48,7 +48,7 @@
 			<button type="submit">Invio</button>
 			<button type="reset">Reset</button>
 		</div>
-	</form>
+	</form>  
 	<c:if test="${message ne null}">
 		<p>
 			<b>${message}</b>
