@@ -19,7 +19,7 @@
 
 <div id="outer">
 	<div id="inner">
-		<h1>WELCOME to the JUNGLE by Blue Team</h1>
+		<h1>WELCOME to the JUNGLE <h4>by Blue Team® </h4></h1>
 	</div>
 </div>
 
