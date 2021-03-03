@@ -20,93 +20,93 @@
 </div>
 <div id="pagina"></div>
 <body>
-	<h3>Log in</h3>
-	<form action="login" method="post">
-		<input name="username" placeholder="email "> <input
-			type="password" name="password" placeholder="password">
-		<button>Invio</button>
-	</form>
-	<h3>Se non sei registrato, crea utente:</h3>
-	<form action="registuser" method="get">
-        <table>
-            <thead>
-                <tr>
-                    <th scope="row"></th>
-                    <th scope="col"> Your profile:</th>
-            
-                </tr>
-            </thead>
-            <tr>
-                <th scope="row"><label for="user">First Name:</label></th>
-                <td><input type="text" id="user"
-                    name="user" maxlength="45"></td>
+	<div id="contenitore">
+		<h3>Log in</h3>
+		<form action="login" method="post">
+			<input name="username" placeholder="email "> <input
+				type="password" name="password" placeholder="password">
+			<button>Invio</button>
+		</form>
+		<h3>Se non sei registrato, crea utente:</h3>
+		<form action="registuser" method="get">
+			<table>
+				<thead>
+					<tr>
+						<th scope="row"></th>
+						<th scope="col">Your profile:</th>
 
-                
-            </tr>
-            <tr>
-                <th scope="row"><label for="userlast">Last name:</label></th>
-                <td><input type="text"
-                    id="userlast" name="userlast" maxlength="45"></td>
-                
-            </tr>
-            <tr>
-                <th scope="row"><label for="pass">Password:</label></th>
-                <td><input type="password" id="pass"
-                    name="pass" maxlength="50"></td>
-                
-            </tr>
-            <tr>
-                <th scope="row"><label for="data">Date of birth:</label></th>
-                <td><input type="date" id="data"
-                    name="data" maxlength="10"></td>
-                
-            </tr>
-            <tr>
-                <th scope="row"><label for="mail">email:</label></th>
-                <td><input type="email" id="mail"
-                    name="mail" maxlength="45"></td>
-                
-            </tr>
-            <tr>
-                <th scope="row"><label for="license">License Plate:</label></th>
-                <td><input type="text"
-                    id="license" name="license" maxlength="45"></td>
-                
-            </tr>
-            
-            
-        </table>
+					</tr>
+				</thead>
+				<tr>
+					<th scope="row"><label for="user">First Name:</label></th>
+					<td><input type="text" id="user" name="user" maxlength="45"></td>
 
-		<p>Select a vehicle type:</p>
-		
-		<div>
-			<input type="radio" id="car" name="vehicle_id" value="1"> <label
-				for="car">Car</label>
+
+				</tr>
+				<tr>
+					<th scope="row"><label for="userlast">Last name:</label></th>
+					<td><input type="text" id="userlast" name="userlast"
+						maxlength="45"></td>
+
+				</tr>
+				<tr>
+					<th scope="row"><label for="pass">Password:</label></th>
+					<td><input type="password" id="pass" name="pass"
+						maxlength="50"></td>
+
+				</tr>
+				<tr>
+					<th scope="row"><label for="data">Date of birth:</label></th>
+					<td><input type="date" id="data" name="data" maxlength="10"></td>
+
+				</tr>
+				<tr>
+					<th scope="row"><label for="mail">email:</label></th>
+					<td><input type="email" id="mail" name="mail" maxlength="45"></td>
+
+				</tr>
+				<tr>
+					<th scope="row"><label for="license">License Plate:</label></th>
+					<td><input type="text" id="license" name="license"
+						maxlength="45"></td>
+
+				</tr>
+
+
+			</table>
+
+			<p>Select a vehicle type:</p>
+
+			<div>
+				<input type="radio" id="car" name="vehicle_id" value="1"> <label
+					for="car">Car</label>
+			</div>
+			<div>
+				<input type="radio" id="bike" name="vehicle_id" value="2"> <label
+					for="bike">Bike</label>
+			</div>
+			<div>
+				<input type="radio" id="camper" name="vehicle_id" value="3">
+				<label for="camper">Camper</label>
+			</div>
+			<div>
+				<input type="radio" id="electric_vehicle" name="vehicle_id"
+					value="4"> <label for="electric_vehicle">Electric
+					Vehicle</label>
+			</div>
+
+
+			<div>
+				<button type="submit">Invio</button>
+				<button type="reset">Reset</button>
+			</div>
+
+		</form>
+
+		<div id="footer">
+			<a href="index.html">Home</a><br> Copyright © 2021 | Designed by
+			Team Blue
 		</div>
-		<div>
-			<input type="radio" id="bike" name="vehicle_id" value="2"> <label
-				for="bike">Bike</label>
-		</div>
-		<div>
-			<input type="radio" id="camper" name="vehicle_id" value="3">
-			<label for="camper">Camper</label>
-		</div>
-		<div>
-			<input type="radio" id="electric_vehicle" name="vehicle_id" value="4">
-			<label for="electric_vehicle">Electric Vehicle</label>
-		</div>
-
-
-		<div>
-			<button type="submit">Invio</button>
-			<button type="reset">Reset</button>
-		</div>
-
-	</form>
-
-	<div id="footer">
-		<a href="index.html">Home</a><br>
-		Copyright © 2021 | Designed by Team Blue
+		<!-- end of footer -->
 	</div>
-	<!-- end of footer -->
 </body>

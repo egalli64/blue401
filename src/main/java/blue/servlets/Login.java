@@ -42,7 +42,7 @@ public class Login extends HttpServlet {
             });
 
         }
-        request.getRequestDispatcher("logged2.jsp").forward(request, response);
+        request.getRequestDispatcher("logged.jsp").forward(request, response);
     }
 
 }
