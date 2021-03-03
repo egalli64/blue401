@@ -15,6 +15,7 @@ import org.slf4j.LoggerFactory;
 import blue.dao.User;
 import blue.dao.UserDao;
 
+
 @WebServlet("/credit")
 public class CreditUpdate extends HttpServlet {
 
@@ -27,18 +28,19 @@ public class CreditUpdate extends HttpServlet {
 
 		HttpSession session = request.getSession(false);
 		if (session != null) {
+		
 			User user = (User) session.getAttribute("user");
 			String credit = request.getParameter("money");
 			Long money = Long.parseLong(credit);
 			Long currentCredit = user.getCredit();
-			//request.setAttribute("current", currentCredit);
-
-			Long newCredit = currentCredit + money;
+			request.setAttribute("current", currentCredit);
+			
+		    Long newCredit = currentCredit + money;
 			user.setCredit(newCredit);
 
 			boolean check = new UserDao().update(user);
 			if (check) {
-				request.setAttribute("message", "Credit updated. Your new credit is " + newCredit + "€");
+				request.setAttribute("message", "Credit updated. Your new credit is " + newCredit);
 			} else {
 				request.setAttribute("message_2", "Credit not updated");
 			}
@@ -48,13 +50,7 @@ public class CreditUpdate extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		HttpSession session = request.getSession(false);
-		if (session != null) {
-			User user = (User) session.getAttribute("user");
-			Long currentCredit = user.getCredit();
-			request.setAttribute("current", currentCredit + "€");
-			request.getRequestDispatcher("/credit.jsp").forward(request, response);			
-		}
+		doGet(request, response);
 	}
 
 }

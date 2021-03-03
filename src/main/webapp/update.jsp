@@ -33,7 +33,7 @@
 	</c:if>
 
 	<h3>Change your vehicle type</h3>
-	<form action="VehicleUpdate" method="get">
+	<form action="update" method="get">
 		<p>Select a vehicle type:</p>
 		<div>
 			<input type="radio" id="car" name="vehicle_id" value="1"> <label

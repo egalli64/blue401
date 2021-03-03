@@ -20,14 +20,9 @@
 <div id="pagina"></div>
 <body>
 	<h1>My credit area</h1>
-	
-	<form action="credit" method="post">
-	<input type="submit" value="current amount">
-	</form>
-	
 	<form action="credit" method="get">
 
-		<p>Credit: ${current}</p>
+		<p>Credit: ${current};</p>
 		<label>Quanto vuoi ricaricare?</label>
 		<div>
 			<input type="radio" id="5" name="money" value="5"> <label
@@ -46,12 +41,14 @@
 				for="50">50€</label>
 		</div>
 
+		<input type="password" id="code" name="code"> <label
+			for="code">Inserisci coupon</label>
+
 		<div>
 			<button type="submit">Invio</button>
 			<button type="reset">Reset</button>
 		</div>
 	</form>
-	
 	<c:if test="${message ne null}">
 		<p>
 			<b>${message}</b>
@@ -62,7 +59,6 @@
 			<b>${message_2}</b>
 		</p> 
 	</c:if>
-	
 	<div id="footer">
 		<a href="index.html">Home</a> | <a href="credit.jsp">Top-up</a> | <a href="update.jsp.jsp">Update Profile</a><br>
 		Copyright Â© 2021 | Designed by Team Blue
