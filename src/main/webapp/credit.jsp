@@ -60,7 +60,7 @@
 	<c:if test="${message_2 ne null}">
 		<p>
 			<b>${message_2}</b>
-		</p>
+		</p> 
 	</c:if>
 	
 	<div id="footer">
