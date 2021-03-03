@@ -12,7 +12,7 @@
 </head>
 <div id="menu">
 	<ul>
-		<li><a href="index.html">HOME</a></li>
+		<li><a href="index.jsp">HOME</a></li>
 		<li><a href="credit.jsp">Top-up</a></li>
 		<li><a href="update.jsp">Update Profile</a></li>
 	</ul>
@@ -28,6 +28,26 @@
 		<c:otherwise>
 			<h1>Hello ${user.firstName}</h1>
 
+			<h2>Choose your parking to get more information! :)</h2>
+			<br>
+
+
+			<a href="parking1"> <iframe
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15718.198901288937!2d7.633255701223295!3d45.04467293408329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47886cd518833c99%3A0xbf32e26c4a1fea49!2sSanta%20Rita%2C%20Torino%20TO!5e0!3m2!1sit!2sit!4v1614782947253!5m2!1sit!2sit"
+					width="300" height="225" style="border: 0;"> </iframe>More info ->
+			</a>
+
+			<form action="parkaction" method="get">
+				<input type="submit" value="Park Here">
+			</form>
+			<br>
+			<a href="parking2"> <iframe
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10952.416507460957!2d7.662219730783046!3d45.05868203694756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47886d3c52995927%3A0xfe146208a52f439b!2sCrocetta%2C%20Torino%20TO!5e0!3m2!1sit!2sit!4v1614783008571!5m2!1sit!2sit"
+					width="300" height="225" style="border: 0;"></iframe>More info ->
+			</a>
+			<form action="parkaction2" method="get">
+				<input type="submit" value="Park Here">
+			</form>
 		</c:otherwise>
 	</c:choose>
 
@@ -41,11 +61,9 @@
 		Back <a href="index.jsp">Home</a>
 	</p>
 	<div id="footer">
-		<a href="index.jsp">Home</a> | <a href="credit.jsp">Top-up</a>|
-		<form action="show" method="get">
-			<input type="submit" value="Update Profile">
-		</form>
-		Copyright © 2021 | Designed by Team Blue
+		<a href="index.jsp">Home</a> | <a href="credit.jsp">Top-up</a>| <a
+			href="show">Update Profile</a> Copyright © 2021 | Designed by Team
+		Blue
 	</div>
 
 	<!-- end of footer -->
