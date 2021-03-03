@@ -30,11 +30,13 @@
 
 		</c:otherwise>
 	</c:choose>
-
+	
+	<c:if test="${logwarning eq null}"> 
 	<form action="logout" method="get">
 		<input type="submit" value="logout">
 	</form>
-
+	</c:if>
+	
 	<p>
 		Back <a href="index.html">Home</a>
 	</p>

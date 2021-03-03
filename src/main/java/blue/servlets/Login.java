@@ -14,7 +14,7 @@ import org.slf4j.LoggerFactory;
 import blue.dao.UserDao;
 
 @WebServlet("/login")
-public class login extends HttpServlet {
+public class Login extends HttpServlet {
     private static final long serialVersionUID = 1L;
     private static final Logger log = LoggerFactory.getLogger(UserCreate.class);
 
@@ -31,15 +31,18 @@ public class login extends HttpServlet {
             request.setAttribute("logwarning", warning);
         } else {
 
-            new UserDao().getLogin(username, password).ifPresent(user -> {
+            new UserDao().getLogin(username, password).ifPresentOrElse(user -> {
 
                 request.setAttribute("user", user);
                 session.setAttribute("user", user);
 
+            }, () ->  {
+            	String warning = "Invalid Username or Password, please retry";
+                request.setAttribute("logwarning", warning);
             });
 
         }
-        request.getRequestDispatcher("logged.jsp").forward(request, response);
+        request.getRequestDispatcher("logged2.jsp").forward(request, response);
     }
 
 }
