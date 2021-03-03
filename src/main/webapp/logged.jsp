@@ -21,22 +21,31 @@
 <body>
 	<c:choose>
 		<c:when test="${logwarning ne null}">
-			<p><b>${logwarning}</b></p>
+			<p>
+				<b>${logwarning}</b>
+			</p>
 		</c:when>
 		<c:otherwise>
 			<h1>Hello ${user.firstName}</h1>
 
 		</c:otherwise>
 	</c:choose>
-	
+
+	<c:if test="${logwarning eq null}">
+		<form action="logout" method="get">
+			<input type="submit" value="logout">
+		</form>
+	</c:if>
+
 	<p>
 		Back <a href="index.html">Home</a>
 	</p>
 	<div id="footer">
-		<a href="index.html">Home</a> | <a href="credit.jsp">Top-up</a>| <a href="update.jsp.jsp">Update Profile</a><br>
-		Copyright © 2021 | Designed by Team Blue
+		<a href="index.html">Home</a> | <a href="credit.jsp">Top-up</a>| <a
+			href="update.jsp">Update Profile</a><br> Copyright © 2021 |
+		Designed by Team Blue
 	</div>
-	
+
 	<!-- end of footer -->
 </body>
 </html>
