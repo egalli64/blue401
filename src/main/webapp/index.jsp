@@ -15,7 +15,7 @@
 <meta name="keywords" content="WebApp Parking">
 
 </head>
-<h1>WELCOME</h1>
+<h1>WELCOME to the JUNGLE</h1>
 
 <div id="menu">
 	<ul>
@@ -44,8 +44,12 @@
 				<thead>
 					<tr>
 						<th scope="row"></th>
-						<th scope="col">Your profile:</th>
-
+						<th scope="col">Sign Up:
+						<div id="sign">
+						<p>It’s quick and easy.<br>
+						</p>
+						</div>
+</th>
 					</tr>
 				</thead>
 				<tr>
@@ -61,18 +65,18 @@
 
 				</tr>
 				<tr>
-					<th scope="row"><label for="pass">Password:</label></th>
+					<th scope="row"><label for="pass">New Password:</label></th>
 					<td><input type="password" id="pass" name="pass"
 						maxlength="50"></td>
 
 				</tr>
 				<tr>
-					<th scope="row"><label for="data">Date of birth:</label></th>
+					<th scope="row"><label for="data">Birthday:</label></th>
 					<td><input type="date" id="data" name="data" maxlength="10"></td>
 
 				</tr>
 				<tr>
-					<th scope="row"><label for="mail">email:</label></th>
+					<th scope="row"><label for="mail">Email:</label></th>
 					<td><input type="email" id="mail" name="mail" maxlength="45"></td>
 
 				</tr>
@@ -82,7 +86,6 @@
 						maxlength="45"></td>
 
 				</tr>
-
 
 			</table>
 
@@ -107,10 +110,11 @@
 			</div>
 
 
-			<div>
-				<button type="submit">Invio</button>
+			<div><br>
+				<button type="submit">Sign Up</button>
 				<button type="reset">Reset</button>
 			</div>
+			<p>By clicking Sign Up, you agree to our Terms and confirm you are at least 18.</p>
 			<html>
 
 		</form>
@@ -119,6 +123,5 @@
 			<a href="index.html">Home</a><br> Copyright © 2021 | Designed
 			by Team Blue
 		</div>
-		<!-- end of footer -->
 	</div>
 </body>

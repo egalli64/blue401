@@ -19,6 +19,9 @@ html, body {
 #error {
 	color: red;
 }
+#sign {
+	font-size: small;
+}
 
 #header {
 	height: 6em;
