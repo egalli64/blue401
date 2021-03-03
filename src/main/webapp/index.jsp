@@ -7,6 +7,7 @@
 
 <head>
 
+
 <title>Home Page</title>
 
 <meta name="author" content="Team Blue">
@@ -15,7 +16,10 @@
 <meta name="keywords" content="WebApp Parking">
 
 </head>
-<h1>WELCOME to the JUNGLE by Blue Team</h1>
+
+<div id="outer">
+    <div id="inner"><h1>WELCOME to the JUNGLE by Blue Team</h1></div>
+</div>
 
 <div id="menu">
 	<ul>
