@@ -43,8 +43,6 @@
 				for="50">50€</label>
 		</div>
 
-		<input type="password" id="code" name="code"> <label
-			for="code">Inserisci coupon</label>
 
 		<div>
 			<button type="submit">Invio</button>

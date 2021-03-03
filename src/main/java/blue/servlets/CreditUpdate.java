@@ -53,7 +53,9 @@ public class CreditUpdate extends HttpServlet {
 			User user = (User) session.getAttribute("user");
 			Long currentCredit = user.getCredit();
 			request.setAttribute("current", currentCredit);
-			;
+			
+			request.getRequestDispatcher("/credit.jsp").forward(request, response);
+			
 		}
 	}
 
