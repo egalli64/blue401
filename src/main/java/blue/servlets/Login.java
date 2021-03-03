@@ -29,20 +29,33 @@ public class Login extends HttpServlet {
         if (username == null || username.isBlank() || password == null || password.isBlank()) {
             String warning = "Invalid Username or Password, please retry";
             request.setAttribute("logwarning", warning);
+            request.getRequestDispatcher("index.jsp").forward(request, response);
+            
         } else {
 
             new UserDao().getLogin(username, password).ifPresentOrElse(user -> {
 
                 request.setAttribute("user", user);
                 session.setAttribute("user", user);
+                try {
+					request.getRequestDispatcher("logged.jsp").forward(request, response);
+				} catch (ServletException | IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
 
             }, () ->  {
             	String warning = "Invalid Username or Password, please retry";
                 request.setAttribute("logwarning", warning);
+                try {
+					request.getRequestDispatcher("index.jsp").forward(request, response);
+				} catch (ServletException | IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
             });
 
         }
-        request.getRequestDispatcher("logged.jsp").forward(request, response);
     }
 
 }
