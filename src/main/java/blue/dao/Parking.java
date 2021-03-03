@@ -1,6 +1,6 @@
 package blue.dao;
 
-import java.util.Date;
+
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -22,16 +22,16 @@ public class Parking {
 	private String parkingName;
 
 	@Column(name = "CAPACITY_BIKE")
-	private String capacityBike;
+	private long capacityBike;
 
 	@Column(name = "CAPACITY_CAR")
-	private String capacityCar;
+	private long capacityCar;
 
 	@Column(name = "CAPACITY_CAMPER")
-	private Date capacityCamper;
+	private long capacityCamper;
 
 	@Column(name = "ZONE_ID")
-	private String zoneId;
+	private long zoneId;
 
 	@Column(name = "COST_BIKE")
 	private long costBike;
@@ -40,13 +40,31 @@ public class Parking {
 	private long costCar;
 
 	@Column(name = "COST_CAMPER")
-	private String costCamper;
+	private long costCamper;
 
 	@Column(name = "CAPACITY_ELECTRIC_VEHICLE")
-	private String capacityElectricVehicle;
+	private long capacityElectricVehicle;
 
 	@Column(name = "COST_ELECTRIC_VEHICLE")
-	private String costElectricVehicle;
+	private long costElectricVehicle;
+
+	public Parking(String parkingName, long capacityBike, long capacityCar, long capacityCamper, long zoneId,
+			long costBike, long costCar, long costCamper, long capacityElectricVehicle, long costElectricVehicle) {
+		super();
+		this.parkingName = parkingName;
+		this.capacityBike = capacityBike;
+		this.capacityCar = capacityCar;
+		this.capacityCamper = capacityCamper;
+		this.zoneId = zoneId;
+		this.costBike = costBike;
+		this.costCar = costCar;
+		this.costCamper = costCamper;
+		this.capacityElectricVehicle = capacityElectricVehicle;
+		this.costElectricVehicle = costElectricVehicle;
+	}
+
+	public Parking() {
+	}
 
 	public long getId() {
 		return id;
@@ -64,35 +82,35 @@ public class Parking {
 		this.parkingName = parkingName;
 	}
 
-	public String getCapacityBike() {
+	public long getCapacityBike() {
 		return capacityBike;
 	}
 
-	public void setCapacityBike(String capacityBike) {
+	public void setCapacityBike(long capacityBike) {
 		this.capacityBike = capacityBike;
 	}
 
-	public String getCapacityCar() {
+	public long getCapacityCar() {
 		return capacityCar;
 	}
 
-	public void setCapacityCar(String capacityCar) {
+	public void setCapacityCar(long capacityCar) {
 		this.capacityCar = capacityCar;
 	}
 
-	public Date getCapacityCamper() {
+	public long getCapacityCamper() {
 		return capacityCamper;
 	}
 
-	public void setCapacityCamper(Date capacityCamper) {
+	public void setCapacityCamper(long capacityCamper) {
 		this.capacityCamper = capacityCamper;
 	}
 
-	public String getZoneId() {
+	public long getZoneId() {
 		return zoneId;
 	}
 
-	public void setZoneId(String zoneId) {
+	public void setZoneId(long zoneId) {
 		this.zoneId = zoneId;
 	}
 
@@ -112,46 +130,27 @@ public class Parking {
 		this.costCar = costCar;
 	}
 
-	public String getCostCamper() {
+	public long getCostCamper() {
 		return costCamper;
 	}
 
-	public void setCostCamper(String costCamper) {
+	public void setCostCamper(long costCamper) {
 		this.costCamper = costCamper;
 	}
 
-	public String getCapacityElectricVehicle() {
+	public long getCapacityElectricVehicle() {
 		return capacityElectricVehicle;
 	}
 
-	public void setCapacityElectricVehicle(String capacityElectricVehicle) {
+	public void setCapacityElectricVehicle(long capacityElectricVehicle) {
 		this.capacityElectricVehicle = capacityElectricVehicle;
 	}
 
-	public String getCostElectricVehicle() {
+	public long getCostElectricVehicle() {
 		return costElectricVehicle;
 	}
 
-	public void setCostElectricVehicle(String costElectricVehicle) {
-		this.costElectricVehicle = costElectricVehicle;
-	}
-
-	public Parking() {
-	}
-
-	public Parking(String parkingName, String capacityBike, String capacityCar, Date capacityCamper, String zoneId,
-			long costBike, long costCar, String costCamper, String capacityElectricVehicle,
-			String costElectricVehicle) {
-
-		this.parkingName = parkingName;
-		this.capacityBike = capacityBike;
-		this.capacityCar = capacityCar;
-		this.capacityCamper = capacityCamper;
-		this.zoneId = zoneId;
-		this.costBike = costBike;
-		this.costCar = costCar;
-		this.costCamper = costCamper;
-		this.capacityElectricVehicle = capacityElectricVehicle;
+	public void setCostElectricVehicle(long costElectricVehicle) {
 		this.costElectricVehicle = costElectricVehicle;
 	}
 

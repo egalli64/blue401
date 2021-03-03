@@ -13,14 +13,36 @@ import org.slf4j.LoggerFactory;
 public class ParkingDao {
 	private static final Logger log = LoggerFactory.getLogger(ParkingDao.class);
 
-	public Optional<Parking> getParkingInfo(long vehicleId, String pName) {
+	public Optional<ParkingObj> getParkingInfo(long vehicleId, String pName) {
 		EntityManager em = null;
 		try {
 			em = JpaUtil.createEntityManager();
 			String jpql = "FROM Parking c WHERE c.parkingName = :pName ";
 			TypedQuery<Parking> query = em.createQuery(jpql, Parking.class);
 			query.setParameter("pName", pName);
-			return Optional.of(query.getSingleResult());
+			Parking current = query.getSingleResult();
+
+			if (vehicleId == 1) {
+				ParkingObj parking = new ParkingObj(pName, current.getCostCar(), current.getCapacityCar());
+				return Optional.of(parking);
+			}
+
+			else if (vehicleId == 2) {
+				ParkingObj parking = new ParkingObj(pName, current.getCostBike(), current.getCapacityBike());
+				return Optional.of(parking);
+			}
+
+			else if (vehicleId == 3) {
+				ParkingObj parking = new ParkingObj(pName, current.getCostCamper(), current.getCapacityCamper());
+				return Optional.of(parking);
+			}
+
+			else {
+				ParkingObj parking = new ParkingObj(pName, current.getCostElectricVehicle(),
+						current.getCapacityElectricVehicle());
+				return Optional.of(parking);
+			}
+
 		} catch (NoResultException nre) {
 			log.debug(String.format("Parking %s: %s", pName, nre.getMessage()));
 			return Optional.empty();
@@ -28,7 +50,9 @@ public class ParkingDao {
 			if (em != null) {
 				em.close();
 			}
+
 		}
+
 	}
 
 	public boolean create(Parking parking) {
