@@ -1,5 +1,5 @@
 html, body {
-	background-color: #0076c9;
+	background-color: #ff0000;
 	color: #000;
 	font-size: 100%;
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;   	
@@ -18,6 +18,10 @@ html, body {
 
 #error {
 	color: red;
+}
+
+#blueteam {
+	color: blue;
 }
 #sign {
 	font-size: small;

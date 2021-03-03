@@ -15,7 +15,7 @@
 <meta name="keywords" content="WebApp Parking">
 
 </head>
-<h1>WELCOME to the JUNGLE</h1>
+<h1>WELCOME to the JUNGLE by Blue Team</h1>
 
 <div id="menu">
 	<ul>
