@@ -123,5 +123,5 @@ INSERT INTO parkings (`parking_name`, `capacity_bike`, `capacity_car`, `capacity
 INSERT INTO parkings (`parking_name`, `capacity_bike`, `capacity_car`, `capacity_camper`, `zone_id`, `cost_bike`, `cost_car`, `cost_camper`, `capacity_electric_vehicle`, `cost_electric_vehicle`) VALUES ('TwentySquidd_Parking', '10', '10', '10','1', '5.00', '7.50', '20.50', '90', '2.00');
 
 INSERT INTO `blue`.`superusers` (`first_name`, `last_name`, `password`, `email`, `zone_id`, `telefono`) VALUES ('Daniele', 'Quaglione', 'Dany', 'daniele.q@libero.it', '1', '34556454');
-
+commit;
 
