@@ -21,7 +21,7 @@
 	<div id="inner">
 		<h1>
 			WELCOME to the JUNGLE of the PARKINGS
-			<h4>by Blue Team®</h4>
+			<h4 id="blue">by Blue Team®</h4>
 		</h1>
 	</div>
 </div>

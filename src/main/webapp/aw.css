@@ -6,6 +6,9 @@ html, body {
 	padding: 1em;
 	height: 95%;
 }
+#blue {
+	color: blue;
+}
 
 #contenitore {
 	width: 350px;
@@ -17,7 +20,7 @@ html, body {
 }
 
 #error {
-	color: red;
+	color:blue;
 }
 
 #blueteam {
