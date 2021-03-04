@@ -13,6 +13,21 @@ html, body {
 .table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
 	background-color: rgba(255, 72, 185, 0.932);
  }
+div.background {
+	background: url(cars.jpg) repeat;
+	border: 2px solid black;
+	opacity: 0.9;
+}
+
+div.transbox {
+	margin: 10px 10px 10px 10px;
+	background-color: #ffffff;
+	border: 1px solid black;
+	opacity: 0.6;
+	text-align: center;
+	/*filter: alpha(opacity=60);For IE8 and earlier */
+}
+
 
 #contenitore {
 	width: 350px;
@@ -32,6 +47,14 @@ html, body {
 }
 #sign {
 	font-size: small;
+}
+
+.label{
+	position: absolute;
+	vertical-align:middle;
+	color:#222;
+	font-family:corbel,sans-serif;
+	font-size: 18px;
 }
 
 #header {
@@ -162,7 +185,7 @@ div.page_content {
 }
 
 table {
-	text-align: left;
+	text-align: center;
 }
 
 td {

@@ -82,8 +82,7 @@
 		<a href="index.jsp">Home</a> | <a href="credit.jsp">Top-up</a>| <a
 			href="show">Update Profile</a> Copyright © 2021 | Designed by Team
 		Blue
-	</div>
-
+</div>
 	<!-- end of footer -->
 </body>
 </html>

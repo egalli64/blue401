@@ -32,7 +32,8 @@
 </div>
 <div id="pagina"></div>
 <body>
-
+<div class="background">
+	<div class="transbox">
 	<h3>Log in</h3>
 	<form action="login" method="post">
 		<input name="username" placeholder="email "> <input
@@ -46,19 +47,11 @@
 			</p>
 		</c:if>
 	</div>
-
-
-
-	<div id="contenitore">
-		<div class="col">
-			<img src="cars.jpg" alt="foto" id="profile" title="Profile"
-				width="100%">
-		</div>
 		<h3>If you are not registered, create new account:</h3>
 		<form action="registuser" method="get">
 			<p>Sign Up</p>
 			<p>It’s quick and easy.</p>
-			<table>
+			<table align="center">
 
 				<tr>
 
@@ -99,25 +92,23 @@
 			</table>
 
 			<p>Select a vehicle type:</p>
-
 			<div>
-				<input type="radio" id="car" name="vehicle_id" value="1"> <label
+				<input type="radio" id="car" name="vehicle_id" value="1"> <label class="label"
 					for="car">Car</label>
 			</div>
 			<div>
-				<input type="radio" id="bike" name="vehicle_id" value="2"> <label
+				<input type="radio" id="bike" name="vehicle_id" value="2"> <label class="label"
 				for="bike">MotorBike</label>
 			</div>
 			<div>
 				<input type="radio" id="camper" name="vehicle_id" value="3">
-				<label for="camper">Camper</label>
+				<label class="label" for="camper">Camper</label>
 			</div>
 			<div>
 				<input type="radio" id="electric_vehicle" name="vehicle_id"
-					value="4"> <label for="electric_vehicle">Electric
+					value="4"> <label class="label" for="electric_vehicle">Electric
 					Vehicle</label>
 			</div>
-
 
 			<div>
 				<br>
@@ -134,4 +125,5 @@
 			Team Blue
 		</div>
 	</div>
+</div>
 </body>
