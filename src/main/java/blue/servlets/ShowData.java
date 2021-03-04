@@ -1,6 +1,10 @@
 package blue.servlets;
 
 import java.io.IOException;
+import java.time.LocalDate;
+import java.time.ZoneId;
+import java.util.Date;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -14,6 +18,12 @@ import blue.dao.User;
 public class ShowData extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
+	public LocalDate convertToLocalDateViaInstant(Date dateToConvert) {
+	    return dateToConvert.toInstant()
+	      .atZone(ZoneId.systemDefault())
+	      .toLocalDate();
+	}
+	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 
@@ -21,6 +31,8 @@ public class ShowData extends HttpServlet {
 		if (session != null) {
 
 			User user = (User) session.getAttribute("user");
+			Date current = user.getBirthOfDate();
+			LocalDate localDate = convertToLocalDateViaInstant(current);
 			/*
 			 * String name = user.getFirstName(); String lastName = user.getLastName();
 			 * String mail = user.geteMail(); String date =
@@ -29,6 +41,7 @@ public class ShowData extends HttpServlet {
 			 * mail); request.setAttribute("date", date);
 			 */
 			request.setAttribute("user", user);
+			request.setAttribute("localdate", localDate);
 
 		}
 		request.getRequestDispatcher("/update.jsp").forward(request, response);

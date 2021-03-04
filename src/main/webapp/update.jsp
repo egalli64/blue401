@@ -35,7 +35,7 @@
 			<td>${user.firstName}</td>
 			<td>${user.lastName}</td>
 			<td>${user.eMail}</td>
-			<td>${user.birthOfDate}</td>
+			<td>${localdate}</td>
 		</tr>
 	</table>
 
