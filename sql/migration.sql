@@ -120,6 +120,7 @@ INSERT INTO `blue`.`zone` (`zone_name`) VALUES ('Centro');
 
 INSERT INTO parkings (`parking_name`, `capacity_bike`, `capacity_car`, `capacity_camper`, `zone_id`, `cost_bike`, `cost_car`, `cost_camper`, `capacity_electric_vehicle`, `cost_electric_vehicle`) VALUES ('Crocetta_Parking', '50', '100', '20', '2' ,'3.50', '5.50', '10.00', '100', '2.50');
 INSERT INTO parkings (`parking_name`, `capacity_bike`, `capacity_car`, `capacity_camper`, `zone_id`, `cost_bike`, `cost_car`, `cost_camper`, `capacity_electric_vehicle`, `cost_electric_vehicle`) VALUES ('San_Paolo_Parking', '100', '50', '20','1', '4.00', '6.50', '12.50', '90', '2.00');
+INSERT INTO parkings (`parking_name`, `capacity_bike`, `capacity_car`, `capacity_camper`, `zone_id`, `cost_bike`, `cost_car`, `cost_camper`, `capacity_electric_vehicle`, `cost_electric_vehicle`) VALUES ('TwentySquidd_Parking', '10', '10', '10','1', '5.00', '7.50', '20.50', '90', '2.00');
 
 INSERT INTO `blue`.`superusers` (`first_name`, `last_name`, `password`, `email`, `zone_id`, `telefono`) VALUES ('Daniele', 'Quaglione', 'Dany', 'daniele.q@libero.it', '1', '34556454');
 
