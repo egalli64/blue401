@@ -19,10 +19,9 @@
 
 <div id="outer">
 	<div id="inner">
-		<h1>
-			WELCOME to the JUNGLE of the PARKINGS
+		<h1>WELCOME to the JUNGLE of the PARKINGS</h1>
 			<h4 id="blue">by Blue Team®</h4>
-		</h1>
+		
 	</div>
 </div>
 
@@ -127,7 +126,7 @@
 			</div>
 			<p>By clicking Sign Up, you agree to our Terms and confirm you
 				are at least 18.</p>
-			<html>
+			
 		</form>
 
 		<div id="footer">

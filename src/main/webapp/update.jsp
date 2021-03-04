@@ -8,8 +8,17 @@
 <title>Update Profile</title>
 <meta name="author" content="Team Blue">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<link rel="stylesheet" type="text/css" href="aw.css">
 <meta name="keywords" content="WebApp Parking">
+<link rel="stylesheet"
+href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet"
+href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script
+src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script
+src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="aw.css">
 </head>
 <div id="menu">
 
@@ -18,26 +27,33 @@
 		<li><a href="credit.jsp">Top-up</a></li>
 		<li><a href="update.jsp">Update Profile</a></li>
 	</ul>
+	<br>
 </div>
 <div id="pagina"></div>
 <body>
-
-	<table>
+	<div class="bs-example">
+		<h4>Your Profile</h4>
+		<br>
+		<table class="table table-striped table-dark">
+		<thead>
 		<tr>
-
-			<th>First Name</th>
-			<th>Last Name</th>
-			<th>Email</th>
-			<th>Birth Date</th>
+		<th>First Name</th>
+		<th>Last Name</th>
+		<th>Email</th>
+		<th>Birthday</th>
 		</tr>
+		</thead>
+		<tbody>
 		<tr>
-
-			<td>${user.firstName}</td>
-			<td>${user.lastName}</td>
-			<td>${user.eMail}</td>
-			<td>${localdate}</td>
+		<td>${user.firstName}</td>
+		<td>${user.lastName}</td>
+		<td>${user.eMail}</td>
+		<td>${localeDate}</td>
 		</tr>
-	</table>
+		</tbody>
+		</table>
+		</div>
+
 
 	<c:if test="${message_vehicle ne null}">
 		<p>
@@ -72,14 +88,14 @@
 		</div>
 		<input type="text" name="license_plate" id="license" maxlength="45"
 			placeholder="License Plate ">
-		<button type="submit">Invio</button>
+		<button type="submit">Confirm</button>
 		<button type="reset">Reset</button>
 	</form>
 
 	<div id="footer">
 		<a href="index.jsp">Home</a> | <a href="credit.jsp">Top-up</a> | <a
-			href="update.jsp">Update Profile</a> |<a href="logged.jsp">MyProfile</a>  <br> Copyright Â© 2021 |
-		Designed by Team Blue
+			href="update.jsp">Update Profile</a> |<a href="logged.jsp">MyProfile</a>  <br> Copyright © 2021 |
+		Designed by Blue Team
 	</div>
 	<!-- end of footer -->
 </body>

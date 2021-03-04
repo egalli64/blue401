@@ -1,5 +1,5 @@
 html, body {
-	background-color: #ff0000;
+	background-color: #5289ff;
 	color: #000;
 	font-size: 100%;
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;   	
@@ -9,6 +9,10 @@ html, body {
 #blue {
 	color: blue;
 }
+
+.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+	background-color: rgba(255, 72, 185, 0.932);
+ }
 
 #contenitore {
 	width: 350px;
@@ -134,7 +138,7 @@ div.page_content {
 }
 
 #footer a {
-	color: #00688B;
+	color: blue;
 	font-weight: normal;
 }
 
