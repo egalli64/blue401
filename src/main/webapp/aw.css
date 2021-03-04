@@ -6,6 +6,7 @@ html, body {
 	padding: 1em;
 	height: 95%;
 }
+
 #blue {
 	color: blue;
 }
@@ -16,6 +17,7 @@ html, body {
   background-color: #2196F3;
   padding: 10px;
 }
+
 .grid-item {
   background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.8);
@@ -32,6 +34,7 @@ html, body {
 	-webkit-box-ordinal-group: 2;
 	box-ordinal-group: 2;
 }
+
 #box2 {
 	background: #a1f3ff;
 	padding: 10px;
@@ -40,6 +43,7 @@ html, body {
 	-webkit-box-ordinal-group: 3;
 	box-ordinal-group: 3;
 }
+
 #box3 {
 	background: #d2fe90;
 	padding: 10px;
@@ -51,7 +55,8 @@ html, body {
 
 .table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
 	background-color: rgba(255, 72, 185, 0.932);
- }
+}
+ 
 div.background {
 	background: url(cars.jpg) repeat;
 	border: 2px solid black;
@@ -66,7 +71,6 @@ div.transbox {
 	text-align: center;
 	/*filter: alpha(opacity=60);For IE8 and earlier */
 }
-
 
 #contenitore {
 	width: 350px;
@@ -84,7 +88,8 @@ div.transbox {
 #blueteam {
 	color: blue;
 }
-#sign {
+
+#sign{
 	font-size: small;
 }
 
@@ -96,7 +101,7 @@ div.transbox {
 	font-size: 18px;
 }
 
-#header {
+#header{
 	height: 6em;
 	width: 98%;
 	right: 1em;
