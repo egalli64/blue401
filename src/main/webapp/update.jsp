@@ -40,7 +40,6 @@ src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></s
 		<th>First Name</th>
 		<th>Last Name</th>
 		<th>Email</th>
-		<th>Birthday</th>
 		</tr>
 		</thead>
 		<tbody>
@@ -48,7 +47,6 @@ src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></s
 		<td>${user.firstName}</td>
 		<td>${user.lastName}</td>
 		<td>${user.eMail}</td>
-		<td>${localeDate}</td>
 		</tr>
 		</tbody>
 		</table>
@@ -76,7 +74,7 @@ src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></s
 		</div>
 		<div>
 			<input type="radio" id="bike" name="vehicle_id" value="2"> <label
-				for="bike">Bike</label>
+				for="bike">MotorBike</label>
 		</div>
 		<div>
 			<input type="radio" id="camper" name="vehicle_id" value="3">
@@ -97,5 +95,4 @@ src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></s
 			href="update.jsp">Update Profile</a> |<a href="logged.jsp">MyProfile</a>  <br> Copyright © 2021 |
 		Designed by Blue Team
 	</div>
-	<!-- end of footer -->
 </body>

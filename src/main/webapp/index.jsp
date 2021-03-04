@@ -106,7 +106,7 @@
 			</div>
 			<div>
 				<input type="radio" id="bike" name="vehicle_id" value="2"> <label
-					for="bike">Bike</label>
+				for="bike">MotorBike</label>
 			</div>
 			<div>
 				<input type="radio" id="camper" name="vehicle_id" value="3">
