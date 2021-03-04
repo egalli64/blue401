@@ -27,7 +27,7 @@
 
 <div id="menu">
 	<ul>
-		<li><a href="index.html">HOME</a></li>
+		<li><a href="index.jsp">HOME</a></li>
 	</ul>
 </div>
 <div id="pagina"></div>
@@ -130,7 +130,7 @@
 		</form>
 
 		<div id="footer">
-			<a href="index.html">Home</a><br> Copyright © 2021 | Designed by
+			<a href="index.jsp">Home</a><br> Copyright © 2021 | Designed by
 			Team Blue
 		</div>
 	</div>

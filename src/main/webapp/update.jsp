@@ -26,6 +26,7 @@ src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></s
 		<li><a href="index.jsp">HOME</a></li>
 		<li><a href="credit.jsp">Top-up</a></li>
 		<li><a href="update.jsp">Update Profile</a></li>
+		<li><a href="logged.jsp">MyProfile</a></li>
 	</ul>
 	<br>
 </div>
