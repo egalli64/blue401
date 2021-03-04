@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
+<meta charset="UTF-8">
 <title>Insert title here</title>
 
 <script>
@@ -24,6 +24,7 @@
 		let hour = document.getElementById("inc").value;
 		let product = tariff*hour;
 		document.getElementById("price").innerText = product;
+		document.getElementById("tot").value = product;
 		
 	}
 </script>
@@ -32,7 +33,7 @@
 	
 	<h1>Your Parking has been Reserved!</h1>
 	<div>
-		<p>Remember your tariff is: </p> <p id="tariffa" hidden>${tariff}</p> <p>€/hr</p>
+		<p>Remember your tariff is:  <span id="tariffa" >${tariff}</span> €/hr</p>
 		<br>
 		<label for="choose">Please, select how long will you stay: </label>
 
@@ -44,13 +45,19 @@
 	<div>
 
 		<button onclick="totalPrice()">Total to pay:</button>
-		<p id="price"> </p> <p>€</p>
+		<p id="price" name = "prezzo"> </p> <span>€</span>
 	</div>
 	<br>
 	<form action = "confirm" method="get">
-	<input type="submit">
+	<input id = "tot" type="hidden" name="prezzo">
+	<input type="submit" value="confirm">
 	</form>
-
+	<c:if test="${message ne null}">
+	<p>${message}</p>
+	</c:if>
+	<c:if test="${message ne null}">
+	<p>${message_2}</p>
+	</c:if>
 
 </body>
 </html>
