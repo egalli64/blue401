@@ -93,7 +93,7 @@ src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></s
 
 	<div id="footer">
 		<!-- <a href="index.jsp">Home</a> --> | <a href="credit.jsp">Top-up</a> | <a
-			href="update.jsp">Update Profile</a> |<a href="logged.jsp">Parkings</a>  <br> Copyright © 2021 |
-		Designed by Blue Team
+			href="update.jsp">Update Profile</a> | <a href="logged.jsp">Parkings</a> | <br> | Copyright © 2021 |
+		Designed by Blue Team |
 	</div>
 </body>
