@@ -19,41 +19,46 @@
 </div>
 <div id="pagina"></div>
 <body>
-	<h1>My credit area</h1>
-	
-	<c:if test="${messageNew ne null}">
-	<p>${messageNew}</p>
-	</c:if>
-	
-	<form action="credit" method="post">
-		<input type="submit" value="Your credit">
-		<p>Credit: ${current} €</p>
-	</form>
-	<form action="credit" method="get">
-		<label>Quanto vuoi ricaricare?</label>
-		<div>
-			<input type="radio" id="5" name="money" value="5"> <label
-				for="5">5€</label>
-		</div>
-		<div>
-			<input type="radio" id="10" name="money" value="10"> <label
-				for="10">10€</label>
-		</div>
-		<div>
-			<input type="radio" id="25" name="money" value="25"> <label
-				for="25">25€</label>
-		</div>
-		<div>
-			<input type="radio" id="50" name="money" value="50"> <label
-				for="50">50€</label>
-		</div>
+	<div class="grid-item">
+		<h1>My credit area</h1>
+
+		<c:if test="${messageNew ne null}">
+			<p>${messageNew}</p>
+		</c:if>
+
+		<form action="credit" method="post">
+			<input type="submit" value="Your credit">
+			<p>Credit: ${current} €</p>
+		</form>
+	</div>
+	<div class="grid-item">
+		<form action="credit" method="get">
+			<label>Quanto vuoi ricaricare?</label>
+			<div>
+				<input type="radio" id="5" name="money" value="5"> <label
+					for="5">5€</label>
+			</div>
+			<div>
+				<input type="radio" id="10" name="money" value="10"> <label
+					for="10">10€</label>
+			</div>
+			<div>
+				<input type="radio" id="25" name="money" value="25"> <label
+					for="25">25€</label>
+			</div>
+			<div>
+				<input type="radio" id="50" name="money" value="50"> <label
+					for="50">50€</label>
+			</div>
 
 
-		<div>
-			<button type="submit">Invio</button>
-			<button type="reset">Reset</button>
-		</div>
-	</form>
+			<div>
+				<button type="submit">Invio</button>
+				<button type="reset">Reset</button>
+			</div>
+
+		</form>
+	</div>
 	<c:if test="${message ne null}">
 		<p>
 			<b>${message}</b>
