@@ -69,7 +69,7 @@
 						<p>
 							<b>Parking capacity: ${parking2.capacity}</b>
 						</p>
-						<br> <a href="park.jsp"><button>Park Here</button></a>
+						<br> <a href="park2.jsp"><button>Park Here</button></a>
 					</div>
 				</div>
 				<div class="grid-item">
@@ -88,7 +88,7 @@
 						<p>
 							<b>Parking capacity: ${parking3.capacity}</b>
 						</p>
-						<br> <a href="park.jsp"><button>Park Here</button></a>
+						<br> <a href="park3.jsp"><button>Park Here</button></a>
 					</div>
 				</div>
 
