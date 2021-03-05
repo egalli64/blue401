@@ -15,6 +15,7 @@
 		<!-- <li><a href="index.jsp">HOME</a></li> -->
 		<li><a href="credit.jsp">Top-up</a></li>
 		<li><a href="update.jsp">Update Profile</a></li>
+		<li><a href="logged.jsp">Parkings</a></li>
 	</ul>
 </div>
 <div id="pagina"></div>
@@ -71,7 +72,8 @@
 	</c:if>
 	<div id="footer">
 		<!-- <a href="index.jsp">Home</a> --> | <a href="credit.jsp">Top-up</a> | <a
-			href="update.jsp">Update Profile</a><br> Copyright Â© 2021 |
+			href="update.jsp">Update Profile</a> |
+			<a href="logged.jsp">Parkings</a> | <br> Copyright © 2021 |
 		Designed by Team Blue
 	</div>
 	<!-- end of footer -->

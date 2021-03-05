@@ -72,6 +72,9 @@
 	<c:if test="${message ne null}">
 		<p>${message_2}</p>
 	</c:if>
+	<form action="logout" method="get">
+			<input type="submit" value="logout">
+			</form>
 </div>
 </body>
 </html>
