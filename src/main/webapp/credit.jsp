@@ -34,7 +34,7 @@
 	</div>
 	<div class="grid-item">
 		<form action="credit" method="get">
-			<label>Quanto vuoi ricaricare?</label>
+			<label>How much do you like to Top-up?</label>
 			<div>
 				<input type="radio" id="5" name="money" value="5"> <label
 					for="5">5€</label>
@@ -54,7 +54,7 @@
 
 
 			<div>
-				<button type="submit">Invio</button>
+				<button type="submit">Confirm</button>
 				<button type="reset">Reset</button>
 			</div>
 
