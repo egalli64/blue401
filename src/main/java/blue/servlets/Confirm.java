@@ -19,12 +19,12 @@ public class Confirm extends HttpServlet {
 			throws ServletException, IOException {
 		HttpSession session = request.getSession(false);
 		if (session != null) {
-			
-			request.setAttribute("tariff",session.getAttribute("tariff"));
-			
-			request.setAttribute("ora", request.getParameter("value"));
-			
-					
+
+			request.setAttribute("tariff", session.getAttribute("tariff"));
+			String s = request.getParameter("valore");
+
+			request.setAttribute("ora", "You payed for a total of " + s + " hours. Do you want to stay more?");
+
 			User user = (User) session.getAttribute("user");
 			long credit = user.getCredit();
 			String totalPrice = request.getParameter("prezzo");
@@ -46,8 +46,6 @@ public class Confirm extends HttpServlet {
 
 		}
 	}
-
-	
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {

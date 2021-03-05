@@ -7,7 +7,6 @@
 <title>Insert title here</title>
 
 <script>
-
 	function buttonClick() {
 		var i = document.getElementById('inc').value;
 		document.getElementById('inc').value = ++i;
@@ -16,52 +15,61 @@
 	function buttonClickless() {
 
 		document.getElementById('inc').value = --i;
-		
+
 	}
-	function totalPrice()  {
-		
+	function totalPrice() {
+
 		let tariff = document.getElementById("tariffa").innerText;
 		let hour = document.getElementById("inc").value;
-		let product = tariff*hour;
+		let product = tariff * hour;
 		document.getElementById("price").innerText = product;
 		document.getElementById("tot").value = product;
+		}
+	/* let check = 0;
+	function hours() {
 		
+		let hours = document.getElementById("inc").value;
+		check = 1; */
 	}
 </script>
 </head>
 <body>
-	
+
 	<h1>Your Parking has been Reserved!</h1>
 	<div>
-		<p>Remember your tariff is:  <span id="tariffa" >${tariff}</span> €/hr</p>
+		<p>
+			Remember your tariff is: <span id="tariffa">${tariff}</span> €/hr
+		</p>
 		<br>
-		<c:if test="${ora ne 0}">
-		<p>You payed for a total of ${ora} hours. </p><br>
-		<p>Do you want to stay more?</p>
+
+		<c:if test="${ora ne null}">
+			<spanp>${ora}</span>
+			
 		</c:if>
-		
+
 		<label for="choose">Please, select how long will you stay: </label>
 
-<!-- 		<button onclick="buttonClickless()">-</button>
+		<!-- 		<button onclick="buttonClickless()">-</button>
 		<button onclick="buttonClick()">+</button> -->
 
-		<input type="number" id="inc" value="0" name="value"></input> <b>hr</b>
+		<input type="number" id="inc" value="0" name="valore"></input> <b>hr</b>
 	</div>
 	<div>
 
 		<button onclick="totalPrice()">Total to pay:</button>
-		<p id="price" name = "prezzo"> </p> <span>€</span>
+		<p id="price" name="prezzo"></p>
+		<span>€</span>
 	</div>
 	<br>
-	<form action = "confirm" method="get">
-	<input id = "tot" type="hidden" name="prezzo">
-	<input type="submit" value="confirm">
+	<form action="confirm" method="get">
+		<input id="tot" type="hidden" name="prezzo"> <input
+			type="submit" value="confirm">
 	</form>
 	<c:if test="${message ne null}">
-	<p>${message}</p>
+		<p>${message}</p>
 	</c:if>
 	<c:if test="${message ne null}">
-	<p>${message_2}</p>
+		<p>${message_2}</p>
 	</c:if>
 
 </body>
