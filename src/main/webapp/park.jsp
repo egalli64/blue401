@@ -54,13 +54,12 @@
 		<!-- 		<button onclick="buttonClickless()">-</button>
 		<button onclick="buttonClick()">+</button> -->
 
-		<input type="number" id="inc" value="0" name="valore"></input> <b>hr</b>
+		<input type="number" id="inc" value="0" name="valore" min="0"></input> <b>hr</b>
 
 	<div>
 
 		<button type="button" onclick="totalPrice()">Total to pay:</button>
-		<p id="price" ></p>
-		<span>€</span>
+		<p><span id="price"></span><span>€</span></p>
 	</div>
 	<br>
 
