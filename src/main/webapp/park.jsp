@@ -53,7 +53,7 @@
 			<!-- 		<button onclick="buttonClickless()">-</button>
 		<button onclick="buttonClick()">+</button> -->
 
-			<input type="number" id="inc" value="0" name="valore" min="0"></input>
+			<input type="number" id="inc" value="0" name="valore" min="1"></input>
 			<b>hr</b>
 
 			<div>
