@@ -23,7 +23,7 @@ src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></s
 <div id="menu">
 
 	<ul>
-		<li><a href="index.jsp">HOME</a></li>
+		<!-- <li><a href="index.jsp">HOME</a></li> -->
 		<li><a href="credit.jsp">Top-up</a></li>
 		<li><a href="update.jsp">Update Profile</a></li>
 		<li><a href="logged.jsp">Parkings</a></li>
@@ -92,7 +92,7 @@ src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></s
 	</form>
 
 	<div id="footer">
-		<a href="index.jsp">Home</a> | <a href="credit.jsp">Top-up</a> | <a
+		<!-- <a href="index.jsp">Home</a> --> | <a href="credit.jsp">Top-up</a> | <a
 			href="update.jsp">Update Profile</a> |<a href="logged.jsp">Parkings</a>  <br> Copyright © 2021 |
 		Designed by Blue Team
 	</div>

@@ -12,7 +12,7 @@
 </head>
 <div id="menu">
 	<ul>
-		<li><a href="index.jsp">HOME</a></li>
+		<!-- <li><a href="index.jsp">HOME</a></li> -->
 		<li><a href="credit.jsp">Top-up</a></li>
 		<li><a href="update.jsp">Update Profile</a></li>
 	</ul>
@@ -70,7 +70,7 @@
 		</p>
 	</c:if>
 	<div id="footer">
-		<a href="index.jsp">Home</a> | <a href="credit.jsp">Top-up</a> | <a
+		<!-- <a href="index.jsp">Home</a> --> | <a href="credit.jsp">Top-up</a> | <a
 			href="update.jsp">Update Profile</a><br> Copyright Â© 2021 |
 		Designed by Team Blue
 	</div>

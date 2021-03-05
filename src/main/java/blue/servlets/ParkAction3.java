@@ -22,6 +22,8 @@ public class ParkAction3 extends HttpServlet {
 			ParkingObj parking3 = (ParkingObj) session.getAttribute("parking3");
 			request.setAttribute("tariff", parking3.getCost());
 			session.setAttribute("tariff", parking3.getCost());
+			long zero = 0;
+			session.setAttribute("totHours", zero);
 
 		}
 		request.getRequestDispatcher("/park.jsp").forward(request, response);

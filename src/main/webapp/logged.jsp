@@ -12,7 +12,7 @@
 </head>
 <div id="menu">
 	<ul>
-		<li><a href="index.jsp">HOME</a></li>
+		<!-- <li><a href="index.jsp">HOME</a></li> -->
 		<li><a href="credit.jsp">Top-up</a></li>
 		<li><a href="update.jsp">Update Profile</a></li>
 	</ul>
@@ -114,7 +114,7 @@
 		Back <a href="index.jsp">Home</a>
 	</p>
 	<div id="footer">
-		<a href="index.jsp">Home</a> | <a href="credit.jsp">Top-up</a>| <a
+		<!-- <a href="index.jsp">Home</a>  -->| <a href="credit.jsp">Top-up</a>| <a
 			href="show">Update Profile</a> Copyright © 2021 | Designed by Team
 		Blue
 	</div>

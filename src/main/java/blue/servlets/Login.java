@@ -37,6 +37,7 @@ public class Login extends HttpServlet {
 
                 request.setAttribute("user", user);
                 session.setAttribute("user", user);
+
                 try {
 					request.getRequestDispatcher("logged.jsp").forward(request, response);
 				} catch (ServletException | IOException e) {
