@@ -35,6 +35,11 @@
 	<div>
 		<p>Remember your tariff is:  <span id="tariffa" >${tariff}</span> €/hr</p>
 		<br>
+		<c:if test="${ora ne 0}">
+		<p>You payed for a total of ${ora} hours. </p><br>
+		<p>Do you want to stay more?</p>
+		</c:if>
+		
 		<label for="choose">Please, select how long will you stay: </label>
 
 <!-- 		<button onclick="buttonClickless()">-</button>
