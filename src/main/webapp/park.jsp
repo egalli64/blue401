@@ -4,6 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="aw.css">
 <title>Insert title here</title>
 
 <script>
@@ -34,8 +35,8 @@
 </script>
 </head>
 <body>
-
-	<h1>Your Parking has been Reserved!</h1>
+<div class="grid-item1">
+	<h1>Your Parking has been Re$erved!</h1>
 	<div>
 		<p>
 			Remember your tariff is: <span id="tariffa">${tariff}</span> €/hr
@@ -72,6 +73,6 @@
 	<c:if test="${message ne null}">
 		<p>${message_2}</p>
 	</c:if>
-
+</div>
 </body>
 </html>

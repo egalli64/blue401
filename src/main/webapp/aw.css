@@ -26,6 +26,14 @@ html, body {
   text-align: center;
 }
 
+.grid-item1 {
+  background-color: #07b53b;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
 #box1 {
 	background: #bababa;
 	padding: 10px;
